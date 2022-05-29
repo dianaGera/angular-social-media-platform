@@ -3,21 +3,65 @@
   font-size: 36px
 
 .users
-  padding: 30px
+  padding: 10px
   position: fixed
   top: 4%
   bottom: 80%
 
 .chat-content
+  min-width: 350px
+  min-height: 65%
   position: fixed
   top: 12%
-  height: fit-content
+  bottom: 40%
   border: 1px solid red
+  overflow-y: scroll
+  border-radius: 10px
 
 .chat-box
-  position: fixed
-  top: 78%
-  bottom: 1%
-  heght: 300px
+  min-width: 350px
+  min-height: 200px
+  margin-bottom: 0px
   border: 1px solid green
+  background-color: white
+  cursor:pointer
+  position: fixed
+  top: 80%
+  transform: translate(0%, -50%)
+
+textarea
+  border: 1px solid var(--grey-light)
+  border-radius: 10px
+  padding: 10px
+
+textarea:focus
+  outline: none !important
+  border-color: var(--grey-strong)
+
+.send-btn
+  height: 24px
+  width: 50px
+  background-color: var(--black-strong)
+  border-radius: 15px
+  padding-left: 5px
+  font-size: 15px
+  text-align: center
+  color: white
+
+.send-btn:hover
+  background-color: var(--black-light)
+
+
+.chat-thread li:nth-child(odd)
+  float: right
+  text-align: right
+  width: 250px
+
+
+
+.chat-thread li:nth-child(even)
+  float: left
+  width: 250px
+  text-align: left
+
 

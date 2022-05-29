@@ -39,12 +39,26 @@
   </ul>
 </div>
 
-<div class="chat-content m-8">
-  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi totam quae repudiandae aliquid neque, sit commodi sint distinctio voluptates eaque maiores corporis. Repudiandae hic minima enim, ex non est quia.
-  Maxime aspernatur assumenda officiis modi veritatis quisquam, accusantium velit esse consectetur tenetur eius, nostrum vero minima voluptatem est, ea corrupti fugit? Labore deserunt beatae iusto officia, porro nesciunt odio nemo!
-  Officia consequuntur ea illo quo distinctio cumque, provident adipisci deserunt corporis suscipit doloremque quae qui itaque voluptates reiciendis atque eaque modi animi laborum ut autem ipsum nulla iste. Commodi, rerum.
-  Ullam accusantium, repudiandae pariatur reprehetate at ad? Veniam quidem accusantium, autem ex reiciendis dolorum sapiente atque alias laudantium aliquid, minus quae assumenda modi dolor. Pariatur velit amet doloribus!
+<div class="chat-content my-8 mx-2 px-4 py-4 w-1/4">
+  <ul class="chat-thread">
+    <li>Are we meeting today?</li>
+    <li>yes, what time suits you?</li>
+    <li>I was thinking after lunch, I have a meeting in the morning</li>
+  </ul>
+
+  <form class="chat-window">
+    <input class="chat-window-message" name="chat-window-message" type="text" autocomplete="off" autofocus />
+  </form>
 </div>
 
-<div class="chat-box m-8">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, sed dolor saepe accusantium doloribus dolores suscipit rem cumque ducimus ipsum mollitia quas doloremque similique voluptas nihil, maiores officiis nobis natus.
-Omnis alias, blanditiis vero quasi at vitae earum sit obcaecati error nesciunt aperiam atque, laborum consequuntur et possimusitatis iste sequi, accusamus sunt. Eum iste dicta facere omnis magnam dolorum assumenda laudantium libero?</div>
+<div class="chat-box my-8 mx-2 px-2 py-2 w-1/4">
+  <textarea class="w-full" name="chat" id="chat" cols="42" rows="4"></textarea>
+<div class="chat-tools flex justify-between">
+  <div class="chat-tool-group">
+    <fa-icon [icon]="faCircle" class="pl-1 text-xl"></fa-icon>
+    <fa-icon [icon]="faCircle" class="pl-1 text-xl"></fa-icon>
+    <fa-icon [icon]="faCircle" class="pl-1 text-xl"></fa-icon>
+  </div>
+  <span class="pr-1 text-xl send-btn">>>>></span>
+</div>
+</div>
