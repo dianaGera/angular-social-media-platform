@@ -9,8 +9,9 @@
   bottom: 80%
 
 .chat-content
-  width: 22%
-  min-width: 350px
+  width: 30%
+  max-width: 360px
+  min-width: 300px
   height: 80%
   position: fixed
   top: 12%
@@ -19,19 +20,24 @@
   overflow-y: scroll
   border-radius: 10px 0 0 10px
 
+@media only screen and (max-width: 1555px)
+  .chat-content
+    width: 20%
+
+
 
 .friends
-  font-size: 30px
+  margin-top: 32px
   position: fixed
-  right: 15px
-  top: 15%
+  right: 22.5px
+  top: 12%
   padding: 10px 5px
-  background-color: var(--black-strong)
+  background-color: #29292928
   min-height: 80%
   border-radius: 0px 10px 10px 0px
 
   img
-    margin: 8px 0
+    margin: 6px 0
 
 p
   width: fit-content
@@ -74,11 +80,11 @@ p
     flex-shrink: 0
 
 
-.avatar
+.avatar-xs, .avatar-m
     position: relative
     display: inline-block
-    width: 36px
-    height: 36px
+    width: 22px
+    height:22px
     line-height: 36px
     text-align: center
     border-radius: 100%
@@ -86,6 +92,9 @@ p
     color: #8b95a5
     text-transform: uppercase
 
+.avatar-m
+  width: 28px
+  height:28px
 
 .media-chat .media-body
     -webkit-box-flex: initial
