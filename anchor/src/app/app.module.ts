@@ -11,6 +11,7 @@ import { MainComponent } from './components/home/main/main.component';
 import { MainHeaderComponent } from './components/home/main-header/main-header.component';
 import { MessangerComponent } from './components/messanger/messanger.component';
 import { SuggestionsComponent } from './components/suggestions/suggestions.component';
+import { RightSideComponent } from './components/right-side/right-side.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SuggestionsComponent } from './components/suggestions/suggestions.compo
     MainComponent,
     MainHeaderComponent,
     MessangerComponent,
-    SuggestionsComponent
+    SuggestionsComponent,
+    RightSideComponent
   ],
   imports: [
     BrowserModule,
