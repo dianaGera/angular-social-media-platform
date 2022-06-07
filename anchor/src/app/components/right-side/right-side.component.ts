@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class RightSideComponent implements OnInit {
   @Input() faSearch: any;
+  @Input() faPlus: any;
 
   constructor() { }
 

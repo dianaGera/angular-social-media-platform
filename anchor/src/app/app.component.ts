@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { faBell, faHouseChimney, faBookmark,
   faNoteSticky, faPenToSquare, faMessage,
-  faCircle, faAngleLeft, faAngleRight, faPaperPlane,
-  faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+  faCircle, faAngleLeft, faAngleRight,
+  faMagnifyingGlass, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -24,4 +24,5 @@ export class AppComponent {
   faAngleLeft = faAngleLeft;
   faAngleRight = faAngleRight;
   faSearch = faMagnifyingGlass;
+  faPlus = faPlus;
 }

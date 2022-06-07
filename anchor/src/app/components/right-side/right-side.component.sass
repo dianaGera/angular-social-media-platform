@@ -1,6 +1,6 @@
 .right-side-block
   width: 330px
-  margin: 60px 30px
+  margin: 50px 30px
 
 .bg-blue-400
   background-color: var(--black-strong)
@@ -19,15 +19,9 @@
 
 input
   width: 325px
-  margin: 30px 0 0 -18px
+  margin: 30px 0 0 -16px
 
 
-@media only screen and (max-width: 1225px)
-  .right-side-block
-    width: 250px
-
-  input, .bg-blue-400
-    width: 240px
 
 
 .dot
@@ -41,10 +35,142 @@ input
   border-radius: 20px
 
 
-a
+.self-recomendation
+  display: inline-block
+  margin-left: 10px
   font-size: 1.5em
   font-weight: 600
 
 
 .self-recomendation
   font-size: 1.3em
+
+.recomendation-post
+  margin: 20px 20px
+
+.recomendation-preview
+  margin: 15px 0
+
+  .title
+    margin: 10px 0
+    font-size: 1.3em
+    font-weight: 700
+    max-width: 270px
+
+
+.user-info
+  .avatar-xs
+    border: 1px solid grey
+    border-radius: 50px
+    width: 20px
+    height: 20px
+  p
+    padding: 0 12px
+    font-size: 1.1em
+    font-weight: 600
+
+
+
+.link-more
+  font-size: 1.1em
+  font-weight: 400
+  color: var(--green-link)
+
+.link-more:hover
+  color: black
+
+
+.twitter-icons
+  justify-content: center
+
+
+.faPlus
+  margin: 35px 5px 0 5px
+  font-size: 1.5em
+  font-weight: 100
+
+.twitter-icon
+  width: 26px
+  height: 28px
+  padding-top: 6px
+
+
+
+.logo, .twitter-icon
+  margin: 35px 0 25px 0
+
+.twitter
+  p
+    width: fit-content
+    // max-width: 200px
+    font-size: 1.3em
+    text-align: center
+    color: grey
+
+.subscribe-to-twitter
+  border: 1px solid var(--grey-light)
+  padding: 10px
+  padding-left: 65px
+  border-radius: 25px
+  margin: 20px 0 0 0px
+  font-size: 1.2em
+
+.subscribe-to-twitter:hover
+  border-color: var(--grey-strong)
+
+.tw-sub
+  position: relative
+  top: -73px
+  left: 30px
+
+.later
+  position: relative
+  top: -70px
+  left: 105px
+  font-size: 1.2em
+  text-decoration: underline
+  color: grey
+
+hr
+  margin-top: -40px
+
+@media only screen and (max-width: 1225px)
+  .right-side-block
+    width: 420px
+    margin: 60px 15px
+
+  input, .bg-blue-400, .twitter-icons, .subscribe-to-twitter, hr
+    width: 290px
+
+  .recomendation-post
+    margin: 20px 0
+
+  .recomendation-preview
+    .title
+      max-width: 220px
+
+  .twitter
+    p
+      padding-left: 60px
+      max-width: 220px
+
+
+@media only screen and (max-width: 1025px)
+
+  input, .bg-blue-400, .subscribe-to-twitter, hr
+    width: 240px
+
+  .later
+    left: 75px
+
+  .twitter-icons
+    width: 235px
+
+  .twitter
+    p
+      padding-left: 38px
+      max-width: 190px
+
+
+
+
