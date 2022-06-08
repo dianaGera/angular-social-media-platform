@@ -35,7 +35,7 @@ input
   border-radius: 20px
 
 
-.self-recomendation
+.self-recomendation, h3
   display: inline-block
   margin-left: 10px
   font-size: 1.5em
@@ -68,6 +68,23 @@ input
     padding: 0 12px
     font-size: 1.1em
     font-weight: 600
+.recomendation-preview
+  .saved-info
+    .user
+      font-size: 1.2em
+      color: grey
+
+    a
+      font-weight: 500
+      color: black
+
+    img
+      width: 25px
+      height: 25px
+
+
+.saved-brief-info
+  color: grey
 
 
 
@@ -115,7 +132,7 @@ input
   margin: 20px 0 0 0px
   font-size: 1.2em
 
-.subscribe-to-twitter:hover
+.subscribe-to-twitter:hover, .follow-btn:hover
   border-color: var(--grey-strong)
 
 .tw-sub
@@ -133,6 +150,47 @@ input
 
 hr
   margin-top: -40px
+
+.tags
+  flex-wrap: wrap
+  margin: 10px 0px
+  max-width: 300px
+
+
+  .tag
+    text-align: center
+  // align-items: flex-start
+
+
+h3
+  font-size: 1.35em
+  margin-top: 20px
+
+.recomendation-preview
+  img
+    width: 55px
+    height: 55px
+
+  .user-info
+    a
+      padding: 5px 12px
+      font-weight: 800
+      font-size: 1.3em
+
+    .user-preview
+      width: 200px
+      font-weight: 400
+      color: grey
+
+.follow-btn
+  position: relative
+  top: 17px
+  padding: 2px 12px 9px 12px
+  border: 1px solid var(--grey-light)
+  border-radius: 20px
+  height: 30px
+  font-size: 1.3em
+
 
 @media only screen and (max-width: 1225px)
   .right-side-block
@@ -154,7 +212,6 @@ hr
       padding-left: 60px
       max-width: 220px
 
-
 @media only screen and (max-width: 1025px)
 
   input, .bg-blue-400, .subscribe-to-twitter, hr
@@ -170,6 +227,13 @@ hr
     p
       padding-left: 38px
       max-width: 190px
+  .tags
+      max-width: 250px
+
+  .recomendation-preview
+    .user-preview
+      width: 150px!important
+
 
 
 
