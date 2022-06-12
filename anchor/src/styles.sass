@@ -13,11 +13,15 @@
   --grey-strong: #00000084
   --grey-lighter: rgba(242, 242, 242, 1)
   --green-link: rgba(26, 137, 23, 1)
+  --blue-light: rgba(0, 146, 216, 1)
 
 
 *
   font-family: medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif
   letter-spacing: 0
+
+a
+  word-spacing: 0px
 
 body
   color: var(--black-strong)
@@ -65,13 +69,14 @@ body
   height: 20px
   width: 6px
 
+.avatar-lg, .avatart-sm
+  border-radius: 50%
+
 input
   border: 1px solid var(--grey-lighter)
   padding: 10px 10px 10px 40px
   border-radius: 20px
   font-size: 1.2em
-
-
 
 .tag
   background-color: var(--grey-lighter)
@@ -85,4 +90,95 @@ input
 
 .link-more:hover
   color: black
+
+.text-grey
+  color: grey
+  font-weight: 400
+
+.text-black
+  color: var(--black-light)
+
+.text-13
+  font-size: 13px
+
+.bg-blue-500
+  background-color: var(--blue-light)
+
+
+.right-side-block
+  margin: 50px 30px
+  position: sticky
+  top: 0px
+  min-height: 1000px
+
+
+.saved-brief-info
+  color: grey
+
+hr
+  margin-top: -40px
+
+.content
+  min-width: 900px
+  justify-content: center
+  min-height: 1200px
+  margin: 0 15px
+  padding: 30px 2% 1% 2%
+  border-right: 1px solid  var(--grey-lighter)
+  box-shadow: -5px 0 2px -5px var(--grey-light)
+
+.right-bar
+    width: 30%
+
+.left-bar
+  position: sticky
+  width: 20%
+
+// .header
+//   display: none
+
+.messanger
+  height: 1200
+  position: sticky
+  padding: 15px
+  width: 45%
+  max-width: 430px
+
+
+@media only screen and (max-width: 1300px)
+  .content
+    margin-left: 10px
+    min-width: 300px
+
+@media only screen and (max-width: 1150px)
+  .content
+    margin-left: 15px
+    width: 60%
+
+@media only screen and (max-width: 1225px)
+  .right-side-block
+    // width: 300px
+    margin: 60px 15px
+  hr
+    width: 290px
+
+
+@media only screen and (max-width: 1025px)
+  hr
+    width: 240px
+
+
+@media only screen and (max-width: 955px)
+  .content
+    box-shadow: none
+
+  .left-bar
+    display: none
+
+  .header
+    display: block
+
+
+
+
 

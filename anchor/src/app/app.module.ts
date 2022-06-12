@@ -28,6 +28,9 @@ import { TopWritersComponent } from './components/right-side/tag/top-writers/top
 import { SearchComponent } from './components/right-side/main/search/search.component';
 import { MainRightSideComponent } from './components/main-right-side/main-right-side.component';
 import { PostComponent } from './pages/post/post.component';
+import { MainContentComponent } from './components/main-content/main-content.component';
+import { PostRightSideComponent } from './components/post-right-side/post-right-side.component';
+import { PostHeaderComponent } from './components/header/post-header/post-header.component';
 
 const appRoutes: Routes = [
   {path: "post", component: PostComponent},
@@ -59,6 +62,9 @@ const appRoutes: Routes = [
     SearchComponent,
     MainRightSideComponent,
     PostComponent,
+    MainContentComponent,
+    PostRightSideComponent,
+    PostHeaderComponent,
   ],
   imports: [
     BrowserModule,

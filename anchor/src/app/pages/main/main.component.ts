@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { faMagnifyingGlass, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-main',
@@ -6,9 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./main.component.sass']
 })
 export class MainComponent implements OnInit {
-  @Input() faSearch: any;
-  @Input() faPlus: any;
-
+  faSearch = faMagnifyingGlass;
+  faPlus = faPlus;
   constructor() { }
 
   ngOnInit(): void {

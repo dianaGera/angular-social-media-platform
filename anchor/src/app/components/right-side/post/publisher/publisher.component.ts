@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-publisher',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./publisher.component.sass']
 })
 export class PublisherComponent implements OnInit {
-
+  @Input() faBell: any;
   constructor() { }
 
   ngOnInit(): void {
