@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-following',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./following.component.sass']
 })
 export class FollowingComponent implements OnInit {
+  @Input() faEllipsis: any;
 
   constructor() { }
 

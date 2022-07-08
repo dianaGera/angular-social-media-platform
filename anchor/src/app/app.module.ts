@@ -20,7 +20,7 @@ import { FollowComponent } from './components/right-side/main/follow/follow.comp
 import { SavedComponent } from './components/right-side/main/saved/saved.component';
 import { PublisherComponent } from './components/right-side/post/publisher/publisher.component';
 import { OurMoreComponent } from './components/right-side/post/our-more/our-more.component';
-import { FollowingComponent } from './components/right-side/post/following/following.component';
+import { FollowingComponent } from './components/right-side/main/following/following.component';
 import { PublisherListsComponent } from './components/right-side/post/publisher-lists/publisher-lists.component';
 import { TagInfoComponent } from './components/right-side/tag/tag-info/tag-info.component';
 import { RelatedTopicsComponent } from './components/right-side/tag/related-topics/related-topics.component';
@@ -31,10 +31,14 @@ import { PostComponent } from './pages/post/post.component';
 import { MainContentComponent } from './components/main-content/main-content.component';
 import { PostRightSideComponent } from './components/post-right-side/post-right-side.component';
 import { PostHeaderComponent } from './components/header/post-header/post-header.component';
+import { UserpageComponent } from './pages/userpage/userpage.component';
+import { UserRightSideComponent } from './components/user-right-side/user-right-side.component';
+import { UserHeaderComponent } from './components/header/user-header/user-header.component';
 
 const appRoutes: Routes = [
   {path: "post", component: PostComponent},
   {path: "home", component: MainComponent},
+  {path: "user", component: UserpageComponent},
 ]
 
 @NgModule({
@@ -65,6 +69,9 @@ const appRoutes: Routes = [
     MainContentComponent,
     PostRightSideComponent,
     PostHeaderComponent,
+    UserpageComponent,
+    UserRightSideComponent,
+    UserHeaderComponent,
   ],
   imports: [
     BrowserModule,

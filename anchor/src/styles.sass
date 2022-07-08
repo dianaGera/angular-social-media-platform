@@ -12,6 +12,7 @@
   --grey-light: #0000003b
   --grey-strong: #00000084
   --grey-lighter: rgba(242, 242, 242, 1)
+  --grey-darck: #434141
   --green-link: rgba(26, 137, 23, 1)
   --blue-light: rgba(0, 146, 216, 1)
 
@@ -69,8 +70,14 @@ body
   height: 20px
   width: 6px
 
-.avatar-lg, .avatart-sm
+.avatar-circle
   border-radius: 50%
+
+.avatar-xs
+    border: 1px solid grey
+    border-radius: 50px
+    width: 20px
+    height: 20px
 
 input
   border: 1px solid var(--grey-lighter)
@@ -100,6 +107,17 @@ input
 
 .text-13
   font-size: 13px
+
+.hover-underline:hover
+  text-decoration: underline
+
+.hover-dark-grey:hover
+  color: var(--grey-darck)
+
+.my-4-underline
+  display:inline-block
+  border-bottom:1px solid black
+  padding-bottom:17px
 
 .bg-blue-500
   background-color: var(--blue-light)

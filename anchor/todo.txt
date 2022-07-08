@@ -1,0 +1,15 @@
+IN PROGRESS:
+
+-- create user page:
+    -- add modal window when click on <Followers> btn
+
+
+
+BUG FIX:
+
+-- header when width < 900px
+
+
+
+
+
