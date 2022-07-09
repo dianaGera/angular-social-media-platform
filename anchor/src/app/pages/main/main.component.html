@@ -1,19 +1,32 @@
-<div class="flex">
-  <div class="content">
-    <app-main-header></app-main-header>
-    <app-main-content></app-main-content>
+
+<div *ngIf="is_authenticate">
+  <div class="flex">
+    <div class="content">
+      <app-main-header></app-main-header>
+      <app-main-content></app-main-content>
+    </div>
+
+
+    <div class="right-bar">
+      <app-main-right-side
+          [faSearch]="faSearch"
+          [faPlus]="faPlus"></app-main-right-side>
+    </div>
+  <!-- <div class="messanger my-4">
+    <app-messanger
+        [faCircle]="faCircle"></app-messanger>
+  </div> -->
+
   </div>
-
-
-  <div class="right-bar">
-    <app-main-right-side
-        [faSearch]="faSearch"
-        [faPlus]="faPlus"></app-main-right-side>
-  </div>
-<!-- <div class="messanger my-4">
-  <app-messanger
-      [faCircle]="faCircle"></app-messanger>
-</div> -->
-
 </div>
+
+<div class="main-content" *ngIf="!is_authenticate">
+  <div class="bg-amber-400 w-full h-[500px]">
+    <div class="w-full bg-black" style="height: 1px; position: relative; top: 80px"></div>
+    <div class="w-full bg-black" style="height: 1px; position: relative; top: 499px"></div>
+  </div>
+  <app-medium-main
+      [faTrend]="faTrend"></app-medium-main>
+</div>
+
 

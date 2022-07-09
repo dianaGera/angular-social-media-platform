@@ -34,10 +34,16 @@ import { PostHeaderComponent } from './components/header/post-header/post-header
 import { UserpageComponent } from './pages/userpage/userpage.component';
 import { UserRightSideComponent } from './components/user-right-side/user-right-side.component';
 import { UserHeaderComponent } from './components/header/user-header/user-header.component';
+import { MediumMainComponent } from './pages/medium-main/medium-main.component';
+import { MediumMainHeaderComponent } from './components/header/medium-main-header/medium-main-header.component';
+import { MediumMainFooterComponent } from './components/footer/medium-main-footer/medium-main-footer.component';
+import { MediumCardComponent } from './components/meduim-main/medium-card/medium-card.component';
+import { MainTrendingComponent } from './components/meduim-main/main-trending/main-trending.component';
+import { MainTagsComponent } from './components/meduim-main/main-tags/main-tags.component';
 
 const appRoutes: Routes = [
   {path: "post", component: PostComponent},
-  {path: "home", component: MainComponent},
+  {path: "", component: MainComponent},
   {path: "user", component: UserpageComponent},
 ]
 
@@ -72,6 +78,12 @@ const appRoutes: Routes = [
     UserpageComponent,
     UserRightSideComponent,
     UserHeaderComponent,
+    MediumMainComponent,
+    MediumMainHeaderComponent,
+    MediumMainFooterComponent,
+    MediumCardComponent,
+    MainTrendingComponent,
+    MainTagsComponent,
   ],
   imports: [
     BrowserModule,

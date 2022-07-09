@@ -1,26 +1,29 @@
-<div class="header">
-  <app-header
-    [faBell]="faBell">
-  </app-header>
-</div>
+<div class="main">
+  <div class="header" *ngIf="is_authenticate">
+    <app-header
+      [faBell]="faBell">
+    </app-header>
+  </div>
 
 
-<div class="flex">
-  <div class="left-bar h-full">
-  <app-left-bar
-    [faHome]="faHome"
-    [faBell]="faBell"
-    [faNotes]="faNotes"
-    [faBookmark]="faBookmark"
-    [faPenToSquare]="faPenToSquare"
-    [faMessage]="faMessage">
-  </app-left-bar>
-</div>
+  <div class="flex">
+    <div class="left-bar h-full" *ngIf="is_authenticate">
+      <app-left-bar
+        [faHome]="faHome"
+        [faBell]="faBell"
+        [faNotes]="faNotes"
+        [faBookmark]="faBookmark"
+        [faPenToSquare]="faPenToSquare"
+        [faMessage]="faMessage">
+      </app-left-bar>
+    </div>
 
 
 
+
+
+  </div>
   <router-outlet></router-outlet>
-
 </div>
 
 

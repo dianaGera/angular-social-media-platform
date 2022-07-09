@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { faMagnifyingGlass, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faArrowTrendUp, faMagnifyingGlass, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-main',
@@ -9,6 +9,11 @@ import { faMagnifyingGlass, faPlus } from '@fortawesome/free-solid-svg-icons';
 export class MainComponent implements OnInit {
   faSearch = faMagnifyingGlass;
   faPlus = faPlus;
+  faTrend = faArrowTrendUp;
+
+  is_authenticate: boolean = false;
+
+
   constructor() { }
 
   ngOnInit(): void {

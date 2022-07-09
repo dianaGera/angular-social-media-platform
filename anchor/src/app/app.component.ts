@@ -23,4 +23,7 @@ export class AppComponent {
   faAngleLeft = faAngleLeft;
   faAngleRight = faAngleRight;
 
+
+  is_authenticate:boolean = false;
+
 }
